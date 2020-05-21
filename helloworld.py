@@ -38,6 +38,36 @@
 # print('{0} C = {1} F'.format(tempInC, tempInF))
 
 ############################## Data Conversion with Input from user #########
-num1 = int( input('Enter a number: '))
-num2 = int( input('Enter another number: '))
-print(num1 + num2)
+# num1 = int( input('Enter a number: '))
+# num2 = int( input('Enter another number: '))
+# print(num1 + num2)
+
+##################################################################################
+
+############################## String Lengths #################################
+# soBored = 'Airplanes have rotars'
+# i = int(len(soBored) - 1)
+# print(len(soBored) -1)
+
+# # randomly display one character from soBored
+# import random
+# print(soBored[ random.randint(0, len(soBored) - 1)])
+
+# # Basic for loop to display random characters in soBored string
+# for i in soBored:
+#     print(soBored[ random.randint(0, len(soBored) - 1)])
+##################################################################################
+
+########################### Escape Characters #############################
+pizzaString = 'pizza'
+print(pizzaString)
+
+pizzaString = '\'pizza\''
+print(pizzaString)
+
+pizzaString = 'pi\\z\\za'
+print(pizzaString)
+
+################### Check out the rest of the escape characters in slide deck ################
+
+
