@@ -28,7 +28,7 @@
 ################################### Data Conversion ##################################
 
 # Write a program which prompts the user for a Celsius temperature
-# convert the temperature to Farenheit, and 
+# convert the temperature to Farenheit, and
 # print out the converted temperature
 
 # tempInC = input('What is the temperature in (in C!): ') #ask the user for temp in C
@@ -59,15 +59,70 @@
 ##################################################################################
 
 ########################### Escape Characters #############################
-pizzaString = 'pizza'
-print(pizzaString)
+# pizzaString = 'pizza'
+# print(pizzaString)
 
-pizzaString = '\'pizza\''
-print(pizzaString)
+# pizzaString = '\'pizza\''
+# print(pizzaString)
 
-pizzaString = 'pi\\z\\za'
-print(pizzaString)
+# pizzaString = 'pi\\z\\za'
+# print(pizzaString)
 
 ################### Check out the rest of the escape characters in slide deck ################
 
+# ▪ Create a program that will ask the user to enter a sales price and tax rate.
+# Your program should then compute the tax and total price. ###############
 
+# itemPrice = float(input('How much does this item cost? '))
+# taxRate = float(input('What is the tax rate? '))
+
+# taxToAdd = itemPrice * taxRate
+# totalPrice = itemPrice + taxToAdd
+# print(str(itemPrice) + ' + tax = ' + str(totalPrice))
+
+###############################################################################################
+
+############################## USING DATETIME ##############################
+
+# from datetime import datetime, timedelta
+
+# print(datetime.now())
+# print("Current time: " + str(datetime.now()))
+
+# tenDaysAgo = datetime.now() - timedelta(days = 10)
+
+# print(str(tenDaysAgo).split()[0])
+
+##########################################################################
+
+
+###################### Error Handling #####################
+
+# num1 = int(input("num 1 = "))
+# num2 = int(input("num 2 = "))
+# print(num1/num2)
+
+# try:
+#     num1 = int(input("num 1 = "))
+#     num2 = int(input("num 2 = "))
+#     print(num1/num2)
+#     print("Success!")
+#     print("Line1")
+#     print("Line2")
+# except ZeroDivisionError as e:
+#     print(e)
+# except :
+#     print("catch anything else ")
+# finally:
+#     print("MSSA")
+
+########################################## How to specify incrementor #############
+
+x = 2020
+print(x)
+
+x += 10 # Takes x and increments by 10
+print(x)
+
+x -= 10 # Takes x and decrements by 10
+print(x)
