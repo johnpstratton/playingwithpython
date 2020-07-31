@@ -118,11 +118,125 @@
 
 ########################################## How to specify incrementor #############
 
-x = 2020
-print(x)
+# x = 2020
+# print(x)
 
-x += 10 # Takes x and increments by 10
-print(x)
+# x += 10 # Takes x and increments by 10
+# print(x)
 
-x -= 10 # Takes x and decrements by 10
-print(x)
+# x -= 10 # Takes x and decrements by 10
+# print(x)
+
+######################################################################################
+
+### Boolean Value examples
+
+# print(10>9)
+# print(10 == 9)
+
+####################### CONDITIONAL LOGIC #####################################
+# one = ["*"]
+# asterisk = "*"
+
+# for x in one:
+#     one.append(asterisk)
+#     for y in one:
+#         print(x)
+#         break
+
+# a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# even = []
+
+# for x in a:
+#     if x %2 == 0:
+#         even.append(x)
+# print(even)
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+# allnums = a + b
+# allnums.sort()
+# count = 0
+# counta = 0
+# countb = 0
+# dups = []
+
+# while count < len(allnums):
+#     if any in a == any in b and (any in a or any in b != any in dups):
+#         dups.append()
+# print(dups)
+
+# a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# b = []
+
+# for x in a (if x %2 == 0):
+
+# import random
+
+# num = random.randint(1, 31)
+# count = 0
+# a = []
+# b = []
+# common = []
+# randRange = random.randrange(1, 31)
+# while count < random.randrange(1, 31):
+#     num = random.randint(1, 31)
+#     a.append(num)
+#     a = list(dict.fromkeys(a))
+#     num = random.randint(1, 31)
+#     b.append(num)
+#     b = list(dict.fromkeys(b))
+    
+#     count += 1
+
+# common = a + b
+# common.sort()
+# print(common)
+# for x in a:
+#     if x != b[x]:
+#         a.remove(x)
+# for y in b:
+#     if y != a[y]:
+#         b.remove(y)
+# a.sort()
+# b.sort()    
+# print(a)
+# print(b)
+# import random 
+# a = random.sample(range(1,30), 12) 
+# b = random.sample(range(1,30), 16) 
+# result_overlap = [i for i in set(a) if i in b] 
+# result = [] 
+# for element in result_overlap: 
+#     if element not in result: 
+#         result.append(element)
+# a.sort()
+# b.sort()     
+# print(a) 
+# print(b)
+# print(result)
+# print(result_overlap)
+
+import random 
+def randPassword():
+    num = 0 # declare variable to store random number between 33-136
+    password = "" #string to add characters to make password
+    while len(password) < 10: # Initiate while loop 
+        num = random.randint(33, 126) # Initiate 1 new random number
+        password += chr(num) # append random character to password
+    return password # return the password when while loop completes
+
+print(randPassword())
+
+lines = 8
+for line in range(1, lines+1):
+    for column in range(1, line +1):
+        print(column, end = "")
+    print("")
+
+print("sfsdf")
+print("sfsdf")
+print("sfsdf")
+print("sfsdf")
